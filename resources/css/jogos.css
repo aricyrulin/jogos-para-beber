@@ -7,6 +7,7 @@ body {
     justify-content: center;
     min-block-size: 100vh;
     gap: var(--size-10);
+    padding: var(--size-10);
 }
 
 /* typography */
@@ -78,7 +79,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--size-9);
+    padding: var(--size-10);
 }
 
 .pop-up__text {
