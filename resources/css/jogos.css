@@ -4,7 +4,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-block-size: 100vh;
+    gap: var(--size-10);
 }
 
 /* typography */
@@ -33,14 +35,7 @@ body {
     padding-block: var(--size-2);
 }
 
-.cartas__btn {
-    position: absolute;
-    top: 70%;
-}
-
 .moeda__btns {
-    position: absolute;
-    top: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,11 +54,6 @@ body {
 }
 
 /* cartas */
-
-.carta {
-    position: absolute;
-    top: 12.5%;
-}
 
 .pop-up-bg {
     block-size: 100%;
@@ -101,8 +91,6 @@ body {
 
 .moeda {
     color: #fff;
-    position: absolute;
-    top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
