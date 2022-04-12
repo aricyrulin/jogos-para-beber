@@ -1,0 +1,110 @@
+body {
+    background-image: url(../images/background.jpg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-block-size: 100vh;
+}
+
+/* typography */
+
+.back {
+    color: #fff;
+    position: absolute;
+    left: var(--size-4);
+    top: var(--size-4);
+}
+
+.close {
+    color: var(--font-clr-400);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 4.2rem;
+    cursor: pointer;
+}
+
+/* buttons */
+
+.in-game__btn {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    padding-block: var(--size-2);
+}
+
+.cartas__btn {
+    position: absolute;
+    top: 70%;
+}
+
+.moeda__btns {
+    position: absolute;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.moeda__btn {
+    padding-inline: 0;
+    inline-size: 125px;
+}
+
+.cartas__btn:active,
+.moeda__btn:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+/* cartas */
+
+.carta {
+    position: absolute;
+    top: 12.5%;
+}
+
+.pop-up-bg {
+    block-size: 100%;
+    inline-size: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.pop-up {
+    text-align: center;
+    inline-size: 80%;
+    max-inline-size: 400px;
+    block-size: 175px;
+    background-color: #fff;
+    border-radius: var(--radius-2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--size-9);
+}
+
+.pop-up__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: var(--size-3);
+}
+
+.moeda {
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-3);
+}

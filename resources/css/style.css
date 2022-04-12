@@ -1,0 +1,91 @@
+@import 'https://unpkg.com/open-props';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-clr-400: rgb(255, 220, 20);
+    --accent-clr-500: rgb(214, 185, 20);
+
+    --font-clr-400: #6b6b6b;
+    --font-clr-500: #525252;
+    --font-clr-700: #1a1a1a;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-clr-700);
+    text-align: center;
+}
+
+section {
+    padding: var(--size-11) var(--size-10) var(--size-12);
+}
+
+img {
+    max-inline-size: 100%;
+}
+
+/* typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    max-inline-size: var(--size-header-3);
+    line-height: 1.1;
+}
+
+.section__title {
+    margin-block-end: var(--size-10);
+}
+
+p {
+    max-inline-size: var(--size-content-3);
+    line-height: 1.6;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* buttons */
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--accent-clr-400);
+    color: var(--font-clr-700);
+    font-weight: 600;
+    border-radius: var(--radius-2);
+    padding-inline: var(--size-8);
+    transition: background-color 500ms;
+}
+
+.btn:hover {
+    background-color: var(--accent-clr-500);
+}
+
+@media only screen and (min-width: 610px) {
+    .section__title {
+        font-size: 2.8rem;
+    }
+}

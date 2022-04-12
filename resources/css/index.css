@@ -1,0 +1,112 @@
+/* typography */
+
+header p {
+    line-height: 1.7;
+}
+
+.jogo__title {
+    font-size: 2.1rem;
+}
+
+/* buttons */
+
+header .btn {
+    padding-block: var(--size-3);
+}
+
+.jogo__btn {
+    padding-block: var(--size-2);
+}
+
+/* sections */
+
+header {
+    color: white;
+    min-block-size: 90vh;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: start;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-10);
+    padding-inline: var(--size-10);
+}
+
+.jogos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-10);
+}
+
+.jogo {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-7);
+    padding-block-end: var(--size-7);
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+    max-inline-size: 400px;
+}
+
+.jogo__img {
+    inline-size: 100%;
+}
+
+.jogo__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-inline-size: 85%;
+    gap: var(--size-3);
+}
+
+footer {
+    background-color: var(--font-clr-700);
+    color: #fff;
+    text-align: center;
+    padding: var(--size-3);
+    font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 610px) {
+    header p,
+    header a {
+        font-size: 2.1rem;
+    }
+
+    .jogos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .jogo {
+        flex-basis: 40%;
+    }
+
+    .jogo__text {
+        block-size: 240px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .jogo {
+        flex-basis: 20%;
+    }
+    .jogo__text {
+        block-size: 250px;
+    }
+}
