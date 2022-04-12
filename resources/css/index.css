@@ -32,7 +32,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: var(--size-10);
-    padding-inline: var(--size-10);
+    padding: var(--size-10);
 }
 
 .jogos-section {
