@@ -171,3 +171,8 @@ body {
 .resultado {
     font-weight: 700;
 }
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+}
