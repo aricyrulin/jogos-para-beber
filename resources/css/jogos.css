@@ -152,7 +152,7 @@ body {
 .dados {
     display: flex;
     justify-content: center;
-    gap: var(--size-10);
+    gap: var(--size-3);
 }
 
 .dados__text {
