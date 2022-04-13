@@ -107,7 +107,7 @@ body {
     inline-size: 150px;
     block-size: 150px;
     position: relative;
-    margin: 50px auto;
+    margin: 0 auto;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
@@ -145,6 +145,10 @@ body {
     100% {
         transform: rotateX(2160deg);
     }
+}
+
+.moeda__text {
+    color: #fff;
 }
 
 /* dados */

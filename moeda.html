@@ -13,14 +13,16 @@
 </head>
 <body>
     <a class="back" href="./index.html"><i class="fa fa-arrow-left"></i></i> Voltar para o menu</a>
-    <h1>Em manutenção</h1>
     <div class="moeda">
         <div class="cara"><img src="./resources/images/moeda/cara.png" alt="" /></div>
         <div class="coroa"><img src="./resources/images/moeda/coroa.png" alt=""></div>
     </div>
+    <div class="moeda__text">
+        <p></p>
+    </div>
     <div class="moeda__btns">
-        <button class="btn in-game__btn moeda__btn" data-number="0">Cara</button>
-        <button class="btn in-game__btn moeda__btn" data-number="1">Coroa</button>
+        <button id='cara-button' class="btn in-game__btn moeda__btn" data-number="0">Cara</button>
+        <button id='coroa-button' class="btn in-game__btn moeda__btn" data-number="1">Coroa</button>
     </div>
 
 <script src="./resources/js/moeda.js"></script>
