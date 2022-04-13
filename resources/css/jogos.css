@@ -62,7 +62,7 @@ body {
 
 .dados__btn {
     padding-inline: 0;
-    inline-size: 100px;
+    inline-size: 95px;
 }
 
 /* cartas */
@@ -152,7 +152,12 @@ body {
 .dados {
     display: flex;
     justify-content: center;
-    gap: var(--size-3);
+    gap: var(--size-2);
+}
+
+.dados img {
+    inline-size: 150px;
+    block-size: auto;
 }
 
 .dados__text {
