@@ -48,7 +48,7 @@ coroaButton.addEventListener('click', () => {
     disableButton();
     function checkResult() {
         if (i === coroaResult) {
-            result.innerHTML = 'Ganhou! Jogue novamente';
+            result.innerHTML = 'Ganhou! Jogue novamente.';
         } else {
             result.innerHTML = 'Perdeu... Bebe!';
         }

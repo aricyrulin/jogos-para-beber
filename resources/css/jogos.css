@@ -19,6 +19,10 @@ body {
     top: var(--size-4);
 }
 
+.back:hover {
+    color: var(--accent-clr-400);
+}
+
 .close {
     color: var(--font-clr-400);
     transform: rotate(45deg);
@@ -27,6 +31,24 @@ body {
     right: 14px;
     font-size: 4.2rem;
     cursor: pointer;
+}
+
+.soon {
+    color: #fff;
+    font-size: 4.2rem;
+}
+
+.outros {
+    color: #fff;
+    list-style-type: none;
+}
+
+.outros a {
+    color: #fff;
+}
+
+.outros a:hover {
+    color: var(--accent-clr-400);
 }
 
 /* buttons */
@@ -176,7 +198,18 @@ body {
     font-weight: 700;
 }
 
-h1 {
-    text-transform: uppercase;
-    color: #fff;
+.shake {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
 }
