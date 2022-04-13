@@ -1,12 +1,7 @@
 const button = document.querySelectorAll('button');
 
-const headsOrTails = [
-    { lado: 'Deu cara', foto: './resources/images/moeda/cara.png' },
-    { lado: 'Deu coroa', foto: './resources/images/moeda/coroa.png' },
-];
-
 function randNumber() {
-    const number = Math.floor(Math.random() * headsOrTails.length);
+    const number = Math.floor(Math.random() * 2);
     return number;
 }
 
@@ -20,8 +15,14 @@ function checkResult(number, numberSelected) {
 
 function flipCoin(numberSelected) {
     const number = randNumber();
-    document.querySelector('img').src = headsOrTails[number].foto;
-    document.querySelector('.lado').innerHTML = headsOrTails[number].lado;
+    if (number === 0) {
+        setTimeout(function(){
+            moeda.style.animation = 'rodar-cara 3s forwards';
+        }, 100)
+    } else if (number === 1) {
+        setTimeout(function(){
+            moeda.style.animation = 'rodar-coroa 3s forwards';
+        }, 100)      
     checkResult(number, numberSelected);
 }
 
