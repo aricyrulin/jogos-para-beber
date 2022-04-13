@@ -57,12 +57,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: var(--size-6);
 }
 
 .dados__btn {
     padding-inline: 0;
-    inline-size: 125px;
+    inline-size: 100px;
 }
 
 /* cartas */
@@ -104,11 +104,47 @@ body {
 /* moeda */
 
 .moeda {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--size-3);
+    inline-size: 150px;
+    block-size: 150px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.moeda img {
+    inline-size: 145px;
+}
+
+.cara,
+.coroa {
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cara {
+    transform: rotateX(180deg);
+}
+
+@keyframes rodar-cara {
+    0% {
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(1980deg);
+    }
+}
+
+@keyframes rodar-coroa {
+    0% {
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(2160deg);
+    }
 }
 
 /* dados */
