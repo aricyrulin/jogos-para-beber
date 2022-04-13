@@ -36,6 +36,11 @@ body {
     padding-block: var(--size-2);
 }
 
+.in-game__btn:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
 .moeda__btns {
     display: flex;
     align-items: center;
@@ -48,10 +53,16 @@ body {
     inline-size: 125px;
 }
 
-.cartas__btn:active,
-.moeda__btn:active {
-    transform: translateY(5px);
-    box-shadow: none;
+.dados__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dados__btn {
+    padding-inline: 0;
+    inline-size: 125px;
 }
 
 /* cartas */
@@ -90,10 +101,32 @@ body {
     gap: var(--size-3);
 }
 
+/* moeda */
+
 .moeda {
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--size-3);
+}
+
+/* dados */
+
+.dados {
+    display: flex;
+    justify-content: center;
+    gap: var(--size-10);
+}
+
+.dados__text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-3);
+}
+
+.resultado {
+    font-weight: 700;
 }

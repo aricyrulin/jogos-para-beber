@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogue os dados. Adivinhe se a próxima soma será
+    maior ou menor que a anterior. Se errar, bebe!">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/jogos.css">
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jogue os dados | Jogos para beber online</title>
+</head>
+<body>
+    <a class="back" href="./index.html"><i class="fa fa-arrow-left"></i></i> Voltar para o menu</a>
+    <div class="dados">
+        <img src="" alt="" class="dado-1" />
+        <img src="" alt="" class="dado-2" />
+    </div>
+    <div class="dados__text">
+        <p class="soma-anterior">Soma anterior: 0</p>
+        <p class="soma-atual"></p>
+        <p class="resultado uppercase"></p>
+    </div>
+    <div class="dados__btns">
+        <button class="btn in-game__btn jogar">Jogar dados</button>
+        <button class="btn in-game__btn dados__btn button-1" style="display: none">Menor</button>
+        <button class="btn in-game__btn dados__btn button-2" style="display: none">Igual</button>
+        <button class="btn in-game__btn dados__btn button-3" style="display: none">Maior</button>
+    </div>
+
+<script src="./resources/js/dados.js"></script>
+</body>
+</html>
