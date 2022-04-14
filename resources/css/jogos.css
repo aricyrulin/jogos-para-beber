@@ -316,3 +316,47 @@ body {
         filter: blur(0px);
     }
 }
+
+@media only screen and (max-height: 480px) and (orientation: landscape) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .carta {
+        block-size: 200px;
+    }
+
+    .menu-desafios-label {
+        font-size: 1.6rem;
+    }
+
+    .menu-desafios {
+        max-inline-size: 450px;
+    }
+
+    .menu-desafios__text {
+        font-size: 1.4rem;
+        gap: 0;
+    }
+
+    #app {
+        inline-size: 250px;
+        block-size: 250px;
+        position: relative;
+        top: -45px;
+        gap: var(--size-8);
+    }
+
+    .marker {
+        position: absolute;
+        inline-size: 45px;
+        left: 104px;
+        top: 50px;
+        z-index: 2;
+    }
+
+    .wheel {
+        width: 80%;
+        height: 80%;
+    }
+}
