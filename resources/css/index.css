@@ -132,7 +132,7 @@ footer {
     font-size: 1.6rem;
 }
 
-@media only screen and (max-height: 950px) and (orientation: landscape) {
+@media only screen and (max-height: 610px) and (orientation: landscape) {
     .hero-bg {
         display: none;
     }
