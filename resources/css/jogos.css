@@ -241,6 +241,7 @@ body {
 .menu-desafios {
     inline-size: 80%;
     max-inline-size: 550px;
+    max-block-size: 90%;
     background-color: #fff;
     border-radius: var(--radius-2);
     position: relative;
@@ -270,6 +271,10 @@ body {
     align-self: center;
     border-bottom: 1px solid var(--font-clr-400);
     padding: 1rem;
+}
+
+.chal:last-of-type {
+    border-bottom: none;
 }
 
 #app {
