@@ -39,6 +39,7 @@
 .hero-bg {
     display: flex;
     justify-content: center;
+    background-color: #f8f8f8;
 }
 
 .hero {
