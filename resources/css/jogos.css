@@ -239,7 +239,7 @@ body {
 }
 
 .menu-desafios {
-    inline-size: 80%;
+    inline-size: 85%;
     max-inline-size: 550px;
     max-block-size: 90%;
     background-color: #fff;
@@ -248,14 +248,14 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: var(--size-10) var(--size-5);
+    padding: 5px;
 }
 
 .menu-desafios__text {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 4fr;
     grid-auto-rows: auto;
-    gap: var(--size-5);
+    gap: 3px;
 }
 
 .emoji {
