@@ -1,6 +1,10 @@
 /* typography */
 
-header p {
+.rol-jog h3 {
+    font-size: 2.4rem;
+}
+
+.prop p {
     line-height: 1.7;
 }
 
@@ -10,7 +14,19 @@ header p {
 
 /* buttons */
 
-header .btn {
+.hero__btn {
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    background-color: rgb(205, 0, 0);
+    color: #fff;
+    font-size: 1.8;
+}
+
+.hero__btn:hover {
+    background-color: rgb(155, 0, 0);
+}
+
+.prop .btn {
     padding-block: var(--size-3);
 }
 
@@ -20,9 +36,42 @@ header .btn {
 
 /* sections */
 
-header {
+.hero-bg {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    max-block-size: 85vh;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    box-shadow: var(--shadow-5);
+    overflow: hidden;
+    border-radius: var(--radius-2);
+    margin: 30px;
+    max-inline-size: 600px;
+}
+
+.hero img {
+    max-block-size: 85vh;
+    block-size: auto;
+}
+
+.rol-jog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 1em;
+    gap: var(--size-10);
+}
+
+.prop {
     color: white;
-    min-block-size: 90vh;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: start;
@@ -32,7 +81,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: var(--size-10);
-    padding: var(--size-10);
+    padding: 3em 1em;
 }
 
 .jogos-section {
@@ -83,8 +132,24 @@ footer {
 }
 
 @media only screen and (min-width: 610px) {
-    header p,
-    header a {
+    .rol-jog h3 {
+        font-size: 2.8rem;
+    }
+
+    .hero__btn {
+        font-size: 2.1rem;
+    }
+
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    .prop {
+        padding: 4em;
+    }
+
+    .prop p,
+    .prop a {
         font-size: 2.1rem;
     }
 
@@ -103,6 +168,35 @@ footer {
 }
 
 @media only screen and (min-width: 1080px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        max-inline-size: 100%;
+    }
+
+    .hero__btn {
+        font-size: 2.1rem;
+    }
+
+    .hero h3 {
+        font-size: 3.2rem;
+    }
+
+    .hero img {
+        /* max-inline-size: 50%; */
+        grid-column: 2 / 3;
+        justify-self: flex-end;
+    }
+
+    .rol-jog {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-self: center;
+        gap: 150px;
+        justify-content: center;
+        padding: 3em;
+    }
+
     .jogo {
         flex-basis: 20%;
     }

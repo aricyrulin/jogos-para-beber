@@ -72,6 +72,10 @@ function disableButton() {
     menor.style.backgroundColor = 'gray';
     igual.style.backgroundColor = 'gray';
     maior.style.backgroundColor = 'gray';
+    jogar.style.pointerEvents = 'none';
+    menor.style.pointerEvents = 'none';
+    igual.style.pointerEvents = 'none';
+    maior.style.pointerEvents = 'none';
     setTimeout(function () {
         jogar.disabled = false;
         menor.disabled = false;
@@ -81,6 +85,10 @@ function disableButton() {
         menor.style.backgroundColor = '';
         igual.style.backgroundColor = '';
         maior.style.backgroundColor = '';
+        jogar.style.pointerEvents = 'auto';
+        menor.style.pointerEvents = 'auto';
+        igual.style.pointerEvents = 'auto';
+        maior.style.pointerEvents = 'auto';
     }, 1000);
 }
 

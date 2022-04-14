@@ -288,6 +288,8 @@ button.addEventListener('click', () => {
     carta.alt = cartas[number].cartaNome;
     cartaNome.innerHTML = cartas[number].cartaNome;
     desafio.innerHTML = cartas[number].desafio;
+    button.style.pointerEvents = 'none';
+    button.style.backgroundColor = 'gray';
     const oi = setInterval(() => {
         document.querySelector('.pop-up-bg').style.display = 'flex';
         clearInterval(oi);
@@ -296,4 +298,6 @@ button.addEventListener('click', () => {
 
 document.querySelector('.close').addEventListener('click', function () {
     document.querySelector('.pop-up-bg').style.display = 'none';
+    button.style.pointerEvents = 'auto';
+    button.style.backgroundColor = '';
 });

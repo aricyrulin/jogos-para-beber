@@ -60,10 +60,14 @@ function disableButton() {
     caraButton.style.backgroundColor = 'gray';
     coroaButton.disabled = true;
     coroaButton.style.backgroundColor = 'gray';
+    caraButton.style.pointerEvents = 'none';
+    coroaButton.style.pointerEvents = 'none';
     setTimeout(function () {
         caraButton.disabled = false;
         caraButton.style.backgroundColor = '';
         coroaButton.disabled = false;
         coroaButton.style.backgroundColor = '';
+        caraButton.style.pointerEvents = 'auto';
+        coroaButton.style.pointerEvents = 'auto';
     }, 3000);
 }
