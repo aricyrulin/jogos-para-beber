@@ -2,6 +2,8 @@
 
 .rol-jog h3 {
     font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
 }
 
 .prop p {
@@ -57,7 +59,7 @@
     max-inline-size: 600px;
 }
 
-.hero img {
+.casino {
     max-block-size: 85vh;
     block-size: auto;
 }
@@ -68,7 +70,11 @@
     align-items: center;
     justify-content: center;
     padding: 3em 1em;
-    gap: var(--size-10);
+    gap: 50px;
+}
+
+.lucky {
+    block-size: 100px;
 }
 
 .prop {
@@ -130,6 +136,15 @@ footer {
     text-align: center;
     padding: var(--size-3);
     font-size: 1.6rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    block-size: 24px;
+    inline-size: auto;
 }
 
 @media only screen and (max-height: 610px) and (orientation: landscape) {
@@ -189,8 +204,7 @@ footer {
         font-size: 3.2rem;
     }
 
-    .hero img {
-        /* max-inline-size: 50%; */
+    .casino {
         grid-column: 2 / 3;
         justify-self: flex-end;
     }
@@ -199,7 +213,7 @@ footer {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         justify-self: center;
-        gap: 150px;
+        gap: 100px;
         justify-content: center;
         padding: 3em;
     }
