@@ -12,7 +12,6 @@
 
 .jogo__title {
     font-size: 2.1rem;
-    inline-size: 100%;
 }
 
 /* buttons */
@@ -93,7 +92,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: var(--size-10);
     padding: 3em 1em;
@@ -119,7 +118,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--size-7);
     padding-block-end: var(--size-7);
     border-radius: var(--radius-2);
@@ -134,10 +133,15 @@
 .jogo__text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     max-inline-size: 85%;
     gap: var(--size-3);
     text-align: start;
+    margin-inline: 10px;
+}
+
+.jogo__btn {
+    margin-inline: 10px;
 }
 
 footer {
@@ -178,6 +182,7 @@ footer img {
 
     .prop {
         padding: 4em;
+        align-items: center;
     }
 
     .prop p,
