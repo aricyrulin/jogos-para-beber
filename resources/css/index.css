@@ -12,6 +12,7 @@
 
 .jogo__title {
     font-size: 2.1rem;
+    inline-size: 100%;
 }
 
 /* buttons */
@@ -96,6 +97,7 @@
     justify-content: center;
     gap: var(--size-10);
     padding: 3em 1em;
+    text-align: start;
 }
 
 .jogos-section {
@@ -135,6 +137,7 @@
     align-items: center;
     max-inline-size: 85%;
     gap: var(--size-3);
+    text-align: start;
 }
 
 footer {
