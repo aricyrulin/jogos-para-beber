@@ -22,10 +22,17 @@
     background-color: rgb(205, 0, 0);
     color: #fff;
     font-size: 1.8;
+    box-shadow: 0 8px 0 rgb(155, 0, 0), 0 8px 8px #222;
+    transition: all 0.2s ease;
 }
 
 .hero__btn:hover {
-    background-color: rgb(155, 0, 0);
+    background-color: rgb(205, 0, 0);
+}
+
+.hero__btn:active {
+    box-shadow: none;
+    transform: translateY(8px);
 }
 
 .prop .btn {
